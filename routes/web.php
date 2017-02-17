@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/hello',function() {
+	$post = \Corcel\Post::find(1);
+	return view('hello', ['post' => $post]);
+});
