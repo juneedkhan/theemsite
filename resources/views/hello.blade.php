@@ -1,1 +1,1 @@
-{{ $post->post_content}}
+{!! $post->post_content!!}
